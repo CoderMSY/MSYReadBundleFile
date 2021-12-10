@@ -36,6 +36,14 @@
                      folderModel:(MSYBundleFolderModel *)folderModel {
     
     NSArray *directiryList = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:path error:nil];
+    //文件排序
+    NSStringCompareOptions comparisonOptions = NSCaseInsensitiveSearch | NSNumericSearch | NSWidthInsensitiveSearch | NSForcedOrderingSearch;
+    directiryList = [directiryList sortedArrayUsingComparator:^NSComparisonResult(NSString *obj1, NSString *obj2) {
+        NSRange range = NSMakeRange(0, obj1.length);
+        
+        return [obj1 compare:obj2 options:comparisonOptions range:range];
+    }];
+    
     for (NSString *dir in directiryList) {
         NSString *subPath = [path stringByAppendingPathComponent:dir];
         
