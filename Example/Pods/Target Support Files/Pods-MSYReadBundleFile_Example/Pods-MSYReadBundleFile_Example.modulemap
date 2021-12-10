@@ -1,0 +1,6 @@
+framework module Pods_MSYReadBundleFile_Example {
+  umbrella header "Pods-MSYReadBundleFile_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

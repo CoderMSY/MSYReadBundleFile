@@ -2,8 +2,8 @@
 //  MSYReadBundleFileTests.m
 //  MSYReadBundleFileTests
 //
-//  Created by 2278046701@qq.com on 12/10/2021.
-//  Copyright (c) 2021 2278046701@qq.com. All rights reserved.
+//  Created by XXX on 12/10/2021.
+//  Copyright (c) 2021 XXX. All rights reserved.
 //
 
 @import XCTest;

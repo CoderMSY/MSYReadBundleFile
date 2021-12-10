@@ -24,6 +24,8 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		BE73C0A7EBC4035D305DF022 /* Pods_MSYReadBundleFile_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D916FA3E05964575D537747 /* Pods_MSYReadBundleFile_Example.framework */; };
+		E0BE271527633DE000C6CC92 /* TableView.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0BE271427633DE000C6CC92 /* TableView.bundle */; };
+		E0BE27242763475000C6CC92 /* Test.bundle in Resources */ = {isa = PBXBuildFile; fileRef = E0BE27232763475000C6CC92 /* Test.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0D38DB644649E700D95521D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		30D0CC0D1D616754028A4DF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		0D38DB644649E700D95521D8 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		30D0CC0D1D616754028A4DF1 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* MSYReadBundleFile_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MSYReadBundleFile_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -65,7 +67,9 @@
 		80431A13A33E950F254480D5 /* Pods-MSYReadBundleFile_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSYReadBundleFile_Example.debug.xcconfig"; path = "Target Support Files/Pods-MSYReadBundleFile_Example/Pods-MSYReadBundleFile_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A825FE56EDC5E699C0B078A4 /* Pods-MSYReadBundleFile_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MSYReadBundleFile_Tests.debug.xcconfig"; path = "Target Support Files/Pods-MSYReadBundleFile_Tests/Pods-MSYReadBundleFile_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		E690162C0308790FB7D49FA7 /* MSYReadBundleFile.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = MSYReadBundleFile.podspec; path = ../MSYReadBundleFile.podspec; sourceTree = "<group>"; };
+		E0BE271427633DE000C6CC92 /* TableView.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = TableView.bundle; sourceTree = "<group>"; };
+		E0BE27232763475000C6CC92 /* Test.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Test.bundle; sourceTree = "<group>"; };
+		E690162C0308790FB7D49FA7 /* MSYReadBundleFile.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = MSYReadBundleFile.podspec; path = ../MSYReadBundleFile.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E91B044F21E4DFF3FCCA5E6E /* Pods_MSYReadBundleFile_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MSYReadBundleFile_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -137,6 +141,7 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* MSYViewController.h */,
 				6003F5A6195388D20070C39A /* MSYViewController.m */,
+				E0BE271327633DCA00C6CC92 /* Resource */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
@@ -185,6 +190,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		E0BE271327633DCA00C6CC92 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				E0BE271427633DE000C6CC92 /* TableView.bundle */,
+				E0BE27232763475000C6CC92 /* Test.bundle */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
 		F5394177E54DCB6C527B7DB3 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -193,7 +207,6 @@
 				A825FE56EDC5E699C0B078A4 /* Pods-MSYReadBundleFile_Tests.debug.xcconfig */,
 				6ACC6958F1FDCAB12B44DC49 /* Pods-MSYReadBundleFile_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +271,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -277,8 +291,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E0BE271527633DE000C6CC92 /* TableView.bundle in Resources */,
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
 				71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */,
+				E0BE27242763475000C6CC92 /* Test.bundle in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -302,11 +318,17 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-MSYReadBundleFile_Example/Pods-MSYReadBundleFile_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/MSYReadBundleFile/MSYReadBundleFile.framework",
+				"${BUILT_PRODUCTS_DIR}/MSYTableView/MSYTableView.framework",
+				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSYReadBundleFile.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MSYTableView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

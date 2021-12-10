@@ -1,0 +1,6 @@
+framework module MSYReadBundleFile {
+  umbrella header "MSYReadBundleFile-umbrella.h"
+
+  export *
+  module * { export * }
+}

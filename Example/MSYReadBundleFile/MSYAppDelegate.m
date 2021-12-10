@@ -2,17 +2,23 @@
 //  MSYAppDelegate.m
 //  MSYReadBundleFile
 //
-//  Created by 2278046701@qq.com on 12/10/2021.
-//  Copyright (c) 2021 2278046701@qq.com. All rights reserved.
+//  Created by XXX on 12/10/2021.
+//  Copyright (c) 2021 XXX. All rights reserved.
 //
 
 #import "MSYAppDelegate.h"
+#import "MSYViewController.h"
 
 @implementation MSYAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+    MSYViewController *ctr = [[MSYViewController alloc] init];
+    UINavigationController *navCtr = [[UINavigationController alloc] initWithRootViewController:ctr];
+    self.window.rootViewController = navCtr;
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 

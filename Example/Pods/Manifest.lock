@@ -1,0 +1,31 @@
+PODS:
+  - Masonry (1.1.0)
+  - MJRefresh (3.7.5)
+  - MSYReadBundleFile (0.1.0):
+    - MSYTableView
+  - MSYTableView (1.0.0):
+    - Masonry
+    - MJRefresh
+
+DEPENDENCIES:
+  - MSYReadBundleFile (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - MJRefresh
+    - MSYTableView
+
+EXTERNAL SOURCES:
+  MSYReadBundleFile:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  MJRefresh: fdf5e979eb406a0341468932d1dfc8b7f9fce961
+  MSYReadBundleFile: ebec6dbd7e18cee17956468d49d89b66c69a2737
+  MSYTableView: a0c5776f4f5eb88b5902a8abd6bcd1ea80e328b5
+
+PODFILE CHECKSUM: a4f4e0863b9ec89de18afa54f06a4862c60bc209
+
+COCOAPODS: 1.11.2

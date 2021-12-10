@@ -1,6 +1,6 @@
 # MSYReadBundleFile
 
-[![CI Status](https://img.shields.io/travis/2278046701@qq.com/MSYReadBundleFile.svg?style=flat)](https://travis-ci.org/2278046701@qq.com/MSYReadBundleFile)
+[![CI Status](https://img.shields.io/travis/XXX/MSYReadBundleFile.svg?style=flat)](https://travis-ci.org/XXX/MSYReadBundleFile)
 [![Version](https://img.shields.io/cocoapods/v/MSYReadBundleFile.svg?style=flat)](https://cocoapods.org/pods/MSYReadBundleFile)
 [![License](https://img.shields.io/cocoapods/l/MSYReadBundleFile.svg?style=flat)](https://cocoapods.org/pods/MSYReadBundleFile)
 [![Platform](https://img.shields.io/cocoapods/p/MSYReadBundleFile.svg?style=flat)](https://cocoapods.org/pods/MSYReadBundleFile)
@@ -22,7 +22,7 @@ pod 'MSYReadBundleFile'
 
 ## Author
 
-2278046701@qq.com, 2278046701@qq.com
+XXX, XXX
 
 ## License
 
