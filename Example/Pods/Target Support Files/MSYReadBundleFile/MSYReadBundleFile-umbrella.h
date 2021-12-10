@@ -11,6 +11,8 @@
 #endif
 
 #import "MSYBundleFileListViewController.h"
+#import "MSYBundleFolderCell.h"
+#import "UIImage+RBFBundle.h"
 #import "MSYFilePreviewController.h"
 #import "MSYBundleFileModel.h"
 #import "MSYBundleFolderModel.h"

@@ -49,7 +49,7 @@
             
             [self recursiveGetFileWithPath:subPath folderModel:subFolderModel];
             
-            [folderModel.dataSource addObject:subFolderModel];
+            [folderModel.folderModelList addObject:subFolderModel];
         }
         else {
             if (isFile) {
@@ -57,7 +57,7 @@
                 fileModel.fileName = dir;
                 fileModel.filePath = subPath;
                 
-                [folderModel.dataSource addObject:fileModel];
+                [folderModel.fileModelList addObject:fileModel];
             }
         }
     }

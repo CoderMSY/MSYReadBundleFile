@@ -9,11 +9,18 @@
 
 @implementation MSYBundleFolderModel
 
-- (NSMutableArray *)dataSource {
-    if (!_dataSource) {
-        _dataSource = [NSMutableArray arrayWithCapacity:0];
+- (NSMutableArray<MSYBundleFolderModel *> *)folderModelList {
+    if (!_folderModelList) {
+        _folderModelList = [NSMutableArray arrayWithCapacity:0];
     }
-    return _dataSource;
+    return _folderModelList;
+}
+
+- (NSMutableArray<MSYBundleFileModel *> *)fileModelList {
+    if (!_fileModelList) {
+        _fileModelList = [NSMutableArray arrayWithCapacity:0];
+    }
+    return _fileModelList;
 }
 
 @end

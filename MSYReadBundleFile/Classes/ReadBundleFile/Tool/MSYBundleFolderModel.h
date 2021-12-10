@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "MSYBundleFileModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -14,7 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, copy) NSString *folderName;
 @property (nonatomic, copy) NSString *folderPath;
 
-@property (nonatomic, strong) NSMutableArray *dataSource;
+@property (nonatomic, strong) NSMutableArray <MSYBundleFolderModel *>*folderModelList;
+@property (nonatomic, strong) NSMutableArray <MSYBundleFileModel *>*fileModelList;
 
 @end
 

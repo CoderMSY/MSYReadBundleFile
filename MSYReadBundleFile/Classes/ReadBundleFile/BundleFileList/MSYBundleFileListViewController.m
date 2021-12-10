@@ -15,6 +15,7 @@
 #import "MSYReadBundleFile.h"
 #import "MSYBundleFolderModel.h"
 #import "MSYBundleFileModel.h"
+#import "MSYBundleFolderCell.h"
 
 @interface MSYBundleFileListViewController () <MSYTableViewProtocol>
 
@@ -69,26 +70,26 @@
     MSYBundleFolderModel *folderModel = [MSYReadBundleFile getBundleFileWithBundlePath:self.bundlePath];
     
     NSMutableArray *rowDicList = [NSMutableArray array];
-    for (id model in folderModel.dataSource) {
-        NSString *title, *detail;
-        if ([model isKindOfClass:[MSYBundleFolderModel class]]) {
-            MSYBundleFolderModel *fModel = (MSYBundleFolderModel *)model;
-            title = fModel.folderName;
-            detail = fModel.folderPath;
-        }
-        else if ([model isKindOfClass:[MSYBundleFileModel class]]) {
-            MSYBundleFileModel *fModel = (MSYBundleFileModel *)model;
-            title = fModel.fileName;
-            detail = fModel.filePath;
-        }
-        
+    for (MSYBundleFolderModel *fModel in folderModel.folderModelList) {
         NSDictionary *rowDic = @{
-            kRow_title : title ? : @"",
-            kRow_detailTitle : detail ? : @"",
-            kRow_extraInfo : model,
+            kRow_title : fModel.folderName ? : @"",
+            kRow_detailTitle : fModel.folderPath ? : @"",
+            kRow_extraInfo : fModel,
+            kRow_cellClass : NSStringFromClass([MSYBundleFolderCell class]),
         };
         [rowDicList addObject:rowDic];
     }
+    
+    for (MSYBundleFileModel *fModel in folderModel.fileModelList) {
+        NSDictionary *rowDic = @{
+            kRow_title : fModel.fileName ? : @"",
+            kRow_detailTitle : fModel.filePath ? : @"",
+            kRow_extraInfo : fModel,
+            kRow_cellClass : NSStringFromClass([MSYBundleFolderCell class]),
+        };
+        [rowDicList addObject:rowDic];
+    }
+    
     NSDictionary *sectionDic = @{
         kSec_rowContent : rowDicList,
         kSec_headerTitle : folderModel.folderName ? : @"",
